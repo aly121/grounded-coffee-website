@@ -2421,3 +2421,310 @@ img {
   line-height: 1.4;
 }
 
+/* RESPONSIVE READABILITY PATCH
+   Only affects tablet/mobile; desktop layout remains unchanged. */
+@media (max-width: 1000px) {
+  .nav-links > a:not(.nav-cta) {
+    font-size: 13px;
+  }
+
+  .nav-cta {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    min-height: 76px;
+    padding: 12px 5%;
+    gap: 12px;
+  }
+
+  .brand {
+    gap: 9px;
+  }
+
+  .brand-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-text strong {
+    font-size: 16px;
+    letter-spacing: 1.8px;
+  }
+
+  .brand-text small {
+    font-size: 8px;
+    letter-spacing: 1.25px;
+  }
+
+  .mobile-menu-button {
+    min-height: 44px;
+    padding: 10px 0 10px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+  }
+
+  .nav-links {
+    padding: 12px 5% 24px;
+  }
+
+  .nav-links > a:not(.nav-cta) {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .nav-cta {
+    min-height: 48px;
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  .hero-eyebrow,
+  .section-kicker {
+    font-size: 10px;
+    line-height: 1.7;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-title {
+    font-size: clamp(52px, 12.5vw, 72px);
+    line-height: 1.04;
+    letter-spacing: -2.2px;
+  }
+
+  .hero-description {
+    max-width: 330px;
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  .button {
+    min-height: 48px;
+    padding: 14px 16px;
+    font-size: 13px;
+    gap: 12px;
+  }
+
+  .hero-text-link {
+    font-size: 13px;
+  }
+
+  .scroll-cue {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  .intro-copy h2,
+  .menu-heading h2,
+  .story-content h2,
+  .contact-heading h2 {
+    font-size: clamp(38px, 9.5vw, 54px);
+    line-height: 1.12;
+    letter-spacing: -1.4px;
+  }
+
+  .intro-label .section-kicker {
+    font-size: 10px;
+  }
+
+  .intro-bottom p,
+  .story-content > p,
+  .menu-heading > p,
+  .experience-content p,
+  .contact-heading > p,
+  .contact-detail p {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .image-note {
+    font-size: 9px;
+    line-height: 1.6;
+  }
+
+  .floating-note span {
+    font-size: 9px;
+  }
+
+  .story-stats span {
+    font-size: 9px;
+    line-height: 1.6;
+  }
+
+  .marquee-track span {
+    font-size: 18px;
+  }
+
+  .category-filters {
+    gap: 8px;
+  }
+
+  .category-button {
+    min-height: 42px;
+    padding: 10px 13px;
+    font-size: 13px;
+  }
+
+  .menu-count {
+    font-size: 11px;
+  }
+
+  .menu-tag {
+    font-size: 8px;
+    line-height: 1.4;
+    padding: 7px;
+  }
+
+  .menu-card-category {
+    font-size: 10px;
+    letter-spacing: 0.7px;
+  }
+
+  .menu-card h3 {
+    font-size: 17px;
+    line-height: 1.35;
+  }
+
+  .menu-price {
+    font-size: 13px;
+  }
+
+  .menu-description {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .menu-footer > p {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+
+  .experience-content h2 {
+    font-size: clamp(52px, 12vw, 72px);
+    line-height: 1.05;
+  }
+
+  .experience-coordinate {
+    font-size: 9px;
+  }
+
+  .contact-number {
+    font-size: 10px;
+  }
+
+  .contact-detail h3 {
+    font-size: 24px;
+  }
+
+  .underlined-link {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .contact-form {
+    padding: 25px 20px;
+  }
+
+  .contact-form label {
+    font-size: 14px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .form-note,
+  .form-status {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .web-cta-eyebrow {
+    font-size: 9px;
+    line-height: 1.7;
+    letter-spacing: 1.4px;
+  }
+
+  .web-cta-content h2 {
+    font-size: clamp(42px, 10.5vw, 60px);
+    line-height: 1.08;
+    letter-spacing: -1.6px;
+  }
+
+  .web-cta-description {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .web-cta-button {
+    min-height: 48px;
+    font-size: 13px;
+  }
+
+  .web-cta-feature strong {
+    font-size: 14px;
+  }
+
+  .web-cta-feature div span {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand-text strong {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+
+  .brand-text small {
+    font-size: 7px;
+    letter-spacing: 1px;
+  }
+
+  .mobile-menu-button {
+    font-size: 13px;
+  }
+
+  .hero-title {
+    font-size: clamp(48px, 12.5vw, 60px);
+    letter-spacing: -1.8px;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .intro-copy h2,
+  .menu-heading h2,
+  .story-content h2,
+  .contact-heading h2 {
+    font-size: clamp(36px, 10vw, 44px);
+  }
+
+  .menu-grid {
+    gap: 28px 12px;
+  }
+
+  .menu-card h3 {
+    font-size: 16px;
+  }
+
+  .menu-description {
+    font-size: 12px;
+  }
+
+  .category-button {
+    padding: 9px 10px;
+    font-size: 12px;
+  }
+}
