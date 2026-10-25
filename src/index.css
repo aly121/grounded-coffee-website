@@ -24,3 +24,60 @@ body {
   background: #c7774d;
   color: #ffffff;
 }
+
+/* FIX NAVBAR MOBILE — GROUNDED */
+@media screen and (max-width: 700px) {
+  .navbar {
+    position: relative !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    min-height: 72px !important;
+    padding: 12px 16px !important;
+  }
+
+  .brand {
+    min-width: 0 !important;
+    flex-shrink: 1 !important;
+  }
+
+  .mobile-menu-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    min-width: 76px !important;
+    min-height: 44px !important;
+    font-size: 14px !important;
+    color: #263b30 !important;
+    cursor: pointer !important;
+  }
+
+  .navbar .nav-links {
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+    padding: 12px 20px 20px !important;
+    background: #f8f6ef !important;
+    z-index: 9999 !important;
+  }
+
+  .navbar .nav-links.nav-open {
+    display: flex !important;
+  }
+
+  .navbar .nav-links a {
+    display: flex !important;
+    align-items: center !important;
+    min-height: 48px !important;
+    font-size: 16px !important;
+  }
+}
+
